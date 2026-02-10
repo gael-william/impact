@@ -14,7 +14,7 @@
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="{{ asset('assets/admin/images/faces/face5.jpg') }}" alt="profile"/>
-              <span class="nav-profile-name">Eugenia Mullins</span>
+              <span class="nav-profile-name">Eu Mullins</span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item">
@@ -28,7 +28,7 @@
             </div>
           </li>
           <li class="nav-item nav-user-status dropdown">
-              <p class="mb-0">Last login was 23 hours ago.</p>
+              <p class="mb-0">Last login was 21 hours ago.</p>
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
@@ -156,11 +156,11 @@
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <ul class="navbar-nav mr-lg-2">
           <li class="nav-item ml-0">
-            <h4 class="mb-0">Dashboard</h4>
+            <h4 class="mb-0">Tableau de bord</h4>
           </li>
           <li class="nav-item">
             <div class="d-flex align-items-baseline">
-              <p class="mb-0">Home</p>
+              <p class="mb-0">Accueil</p>
               <i class="typcn typcn-chevron-right"></i>
               <p class="mb-0">Main Dahboard</p>
             </div>
