@@ -175,7 +175,32 @@
           </div>
         </div>
 
+        <!-- TGV Requests Alert Section -->
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="card" style="border-left: 6px solid #f59e0b;">
+              <div class="card-body">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div>
+                    <h5 style="margin: 0; color: #1f2937; font-weight: bold;">
+                      🎯 Vous avez {{ \App\Models\TgvRequest::pending()->count() }} demande(s) TGV en attente de révision
+                    </h5>
+                    <p style="color: #6b7280; margin: 0.5rem 0 0 0; font-size: 0.9rem;">
+                      Consultez et traitez les demandes des clients pour démarrer nouveaux projets
+                    </p>
+                  </div>
+                  <a href="{{ route('admin.tgv.requests') }}" 
+                     style="background: #f59e0b; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: bold; white-space: nowrap;">
+                    📋 Voir toutes les demandes
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- TGV Project Management Section -->
+
         <div class="row mb-4">
           <div class="col-lg-8">
             <div class="card">

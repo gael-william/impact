@@ -128,7 +128,7 @@
                 <li style="margin-bottom: 0.5rem;"><span style="color: #2563eb;">•</span> Archivage sécurisé</li>
                 <li><span style="color: #2563eb;">•</span> Accès numérique</li>
               </ul>
-              <button style="width: 100%; background: #2563eb; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer;">Choisir</button>
+              <a href="{{ route('tgv.form', 'Corpus') }}" style="display: block; text-align: center; width: 100%; background: #2563eb; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer; text-decoration: none; transition: background 0.3s;" onmouseover="this.style.background='#1e40af';" onmouseout="this.style.background='#2563eb';">Choisir</a>
             </div>
 
             <!-- Option 2 -->
@@ -144,7 +144,7 @@
                 <li style="margin-bottom: 0.5rem;"><span style="color: #16a34a;">•</span> Leçons de vie</li>
                 <li><span style="color: #16a34a;">•</span> 50 exemplaires</li>
               </ul>
-              <button style="width: 100%; background: #16a34a; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer;">Choisir</button>
+              <a href="{{ route('tgv.form', 'Essentiel') }}" style="display: block; text-align: center; width: 100%; background: #16a34a; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer; text-decoration: none; transition: background 0.3s;" onmouseover="this.style.background='#15803d';" onmouseout="this.style.background='#16a34a';">Choisir</a>
             </div>
 
             <!-- Option 3 -->
@@ -161,7 +161,7 @@
                 <li style="margin-bottom: 0.5rem;"><span style="color: #d97706;">•</span> ISBN international</li>
                 <li><span style="color: #d97706;">•</span> 200 exemplaires</li>
               </ul>
-              <button style="width: 100%; background: #d97706; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer;">Choisir</button>
+              <a href="{{ route('tgv.form', 'Avancé') }}" style="display: block; text-align: center; width: 100%; background: #d97706; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer; text-decoration: none; transition: background 0.3s;" onmouseover="this.style.background='#b45309';" onmouseout="this.style.background='#d97706';">Choisir</a>
             </div>
 
             <!-- Option 4 -->
@@ -177,7 +177,7 @@
                 <li style="margin-bottom: 0.5rem;"><span style="color: #a855f7;">•</span> Cérémonie exclusive</li>
                 <li><span style="color: #a855f7;">•</span> 300 exemplaires</li>
               </ul>
-              <button style="width: 100%; background: #a855f7; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer;">Choisir</button>
+              <a href="{{ route('tgv.form', 'Consacré') }}" style="display: block; text-align: center; width: 100%; background: #a855f7; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer; text-decoration: none; transition: background 0.3s;" onmouseover="this.style.background='#9333ea';" onmouseout="this.style.background='#a855f7';">Choisir</a>
             </div>
 
             <!-- Option 5 -->
@@ -193,7 +193,7 @@
                 <li style="margin-bottom: 0.5rem;"><span style="color: #fef08a;">★</span> 500 invités à la cérémonie</li>
                 <li><span style="color: #fef08a;">★</span> 500 exemplaires</li>
               </ul>
-              <button style="width: 100%; background: #facc15; color: #1f2937; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer;">Nous contacter</button>
+              <a href="{{ route('tgv.form', 'VIP') }}" style="display: block; text-align: center; width: 100%; background: #facc15; color: #1f2937; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer; text-decoration: none; transition: background 0.3s;" onmouseover="this.style.background='#eab308';" onmouseout="this.style.background='#facc15';">Demander un devis</a>
             </div>
           </div>
         </div>
@@ -204,19 +204,19 @@
         <div style="background: linear-gradient(to bottom right, rgba(206, 244, 254, 0.5), rgba(191, 219, 254, 0.5)); padding: 2rem; border-radius: 0.75rem; border: 2px solid #cffafe;">
           <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #0369a1;">DIAMANT</h3>
           <p style="color: #475569; margin-bottom: 1rem;">L'accompagnement Premium pour votre patrimoine</p>
-          <button style="width: 100%; background: #0891b2; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer;">Découvrir</button>
+          <a href="{{ route('tgv.form', 'Diamant') }}" style="display: block; text-align: center; width: 100%; background: #0891b2; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer; text-decoration: none; transition: background 0.3s;" onmouseover="this.style.backgroundColor='#0e7490';" onmouseout="this.style.backgroundColor='#0891b2';">Découvrir</a>
         </div>
 
         <div style="background: linear-gradient(to bottom right, rgba(254, 243, 199, 0.5), rgba(253, 224, 71, 0.5)); padding: 2rem; border-radius: 0.75rem; border: 2px solid #fcd34d;">
           <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #b45309;">OR</h3>
           <p style="color: #475569; margin-bottom: 1rem;">L'accompagnement équilibré et complet</p>
-          <button style="width: 100%; background: #d97706; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer;">Découvrir</button>
+          <a href="{{ route('tgv.form', 'Or') }}" style="display: block; text-align: center; width: 100%; background: #d97706; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer; text-decoration: none; transition: background 0.3s;" onmouseover="this.style.background='#b45309';" onmouseout="this.style.background='#d97706';">Découvrir</a>
         </div>
 
         <div style="background: linear-gradient(to bottom right, rgba(226, 232, 240, 0.5), rgba(203, 213, 225, 0.5)); padding: 2rem; border-radius: 0.75rem; border: 2px solid #cbd5e1;">
           <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #334155;">ARGENT</h3>
           <p style="color: #475569; margin-bottom: 1rem;">L'accompagnement essentiel et accessible</p>
-          <button style="width: 100%; background: #475569; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer;">Découvrir</button>
+          <a href="{{ route('tgv.form', 'Argent') }}" style="display: block; text-align: center; width: 100%; background: #475569; color: white; font-weight: bold; padding: 0.5rem; border: none; border-radius: 0.375rem; cursor: pointer; text-decoration: none; transition: background 0.3s;" onmouseover="this.style.background='#334155';" onmouseout="this.style.background='#475569';">Découvrir</a>
         </div>
       </div>
     </div>
