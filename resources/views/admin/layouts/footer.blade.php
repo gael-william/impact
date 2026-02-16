@@ -124,7 +124,7 @@
         <h4>Contact</h4>
         <div class="footer-contact">
           <i class="typcn typcn-phone"></i>
-          <span>+226 70 25 63 63</span>
+          <span>+226 70 21 05 63 </span>
         </div>
         <div class="footer-contact">
           <i class="typcn typcn-mail"></i>
