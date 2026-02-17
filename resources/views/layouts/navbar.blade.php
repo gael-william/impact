@@ -2,8 +2,10 @@
         <div class="container-fluid bg-dark px-0">
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
-                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                            <img src="{{ asset('./img/log_logo.jpeg') }}" alt="">
+                    <a href="{{ url('/') }}"
+                        class="navbar-brand w-100 h-100 d-flex align-items-center justify-content-center">
+                        <img src="{{ asset('img/log_logo.jpeg') }}" alt="Logo" class="img-fluid rounded-3"
+                            style="max-height: 80px;">
                     </a>
                 </div>
                 <div class="col-lg-9">
@@ -32,7 +34,8 @@
                         <a href="index.html" class="navbar-brand d-block d-lg-none">
                             <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
                         </a>
-                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
@@ -51,7 +54,9 @@
                                 </div>
                                 <a href="contact.html" class="nav-item nav-link">Contact</a>
                             </div>
-                            <a href="https://htmlcodex.com/hotel-html-template-pro" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">un jeune un emploi<i class="fa fa-arrow-right ms-3"></i></a>
+                            <a href="https://htmlcodex.com/hotel-html-template-pro"
+                                class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">un jeune un emploi<i
+                                    class="fa fa-arrow-right ms-3"></i></a>
                         </div>
                     </nav>
                 </div>
