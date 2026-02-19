@@ -1,10 +1,10 @@
-@extends('admin.layouts.admin')
+﻿@extends('admin.layouts.admin')
 
 @section('content')
 
 <style>
 /* ===============================================
-   SIDEBAR MODERNE INTÉGRÉ
+   SIDEBAR MODERNE INTÃ‰GRÃ‰
    =============================================== */
 .admin-wrapper {
   display: flex;
@@ -364,7 +364,7 @@
       
       <!-- TGV Section -->
       <div class="sidebar-section tgv-section">
-        <h6 class="section-title">🎯 TGV Management</h6>
+        <h6 class="section-title">TGV Management</h6>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="{{ route('admin.tgv.requests') }}" class="nav-link">
@@ -376,13 +376,13 @@
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="typcn typcn-star-outline nav-icon"></i>
-              <span>Projets Platinum</span>
+              <span>Projets Platinium</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="typcn typcn-group nav-icon"></i>
-              <span>Équipe</span>
+              <span>Ã‰quipe</span>
             </a>
           </li>
           <li class="nav-item">
@@ -396,7 +396,7 @@
       
       <!-- 1 Jeune 1 Emploi Section -->
       <div class="sidebar-section emploi-section" style="display: none;">
-        <h6 class="section-title">💼 1 Jeune 1 Emploi</h6>
+        <h6 class="section-title">1 Jeune 1 Emploi</h6>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -493,14 +493,14 @@
           <div class="stat-header">
             <div>
               <div class="stat-value">8</div>
-              <div class="stat-label">Projets Platinum</div>
+              <div class="stat-label">Projets Platinium</div>
             </div>
             <div class="stat-icon" style="background: linear-gradient(135deg, #8b5cf6, #a855f7);">
               <i class="typcn typcn-star-outline"></i>
             </div>
           </div>
           <div class="stat-trend">
-            <span>Consécration Exclusive</span>
+            <span>ConsÃ©cration Exclusive</span>
           </div>
         </div>
         
@@ -542,15 +542,15 @@
         <div style="display: flex; align-items: center; justify-content: space-between;">
           <div>
             <h3 style="font-size: 1.25rem; font-weight: 700; color: #92400e; margin-bottom: 0.5rem;">
-              🎯 {{ \App\Models\TgvRequest::pending()->count() }} demande(s) TGV en attente
+              {{ \App\Models\TgvRequest::pending()->count() }} demande(s) TGV en attente
             </h3>
             <p style="color: #78350f; margin: 0;">
-              Consultez et traitez les demandes des clients pour démarrer de nouveaux projets
+              Consultez et traitez les demandes des clients pour dÃ©marrer de nouveaux projets
             </p>
           </div>
           <a href="{{ route('admin.tgv.requests') }}" 
              style="background: #f59e0b; color: white; padding: 0.75rem 1.5rem; border-radius: 10px; text-decoration: none; font-weight: 600; white-space: nowrap;">
-            📋 Voir les demandes
+             Voir les demandes
           </a>
         </div>
       </div>
@@ -558,7 +558,7 @@
       <!-- Projects Table -->
       <div class="content-card">
         <div class="card-header">
-          <h2 class="card-title">📋 Projets TGV en Cours</h2>
+          <h2 class="card-title">Projets TGV en Cours</h2>
         </div>
         
         <div style="overflow-x: auto;">
@@ -566,17 +566,17 @@
             <thead>
               <tr style="background: #f8fafc;">
                 <th style="padding: 1rem; text-align: left; font-weight: 600; color: #475569;">Famille</th>
-                <th style="padding: 1rem; text-align: left; font-weight: 600; color: #475569;">Catégorie</th>
-                <th style="padding: 1rem; text-align: left; font-weight: 600; color: #475569;">Étape</th>
+                <th style="padding: 1rem; text-align: left; font-weight: 600; color: #475569;">CatÃ©gorie</th>
+                <th style="padding: 1rem; text-align: left; font-weight: 600; color: #475569;">Ã‰tape</th>
                 <th style="padding: 1rem; text-align: left; font-weight: 600; color: #475569;">Progression</th>
                 <th style="padding: 1rem; text-align: left; font-weight: 600; color: #475569;">Statut</th>
               </tr>
             </thead>
             <tbody>
               <tr style="border-bottom: 1px solid #e2e8f0;">
-                <td style="padding: 1rem;"><strong>Héritage Dupont</strong></td>
-                <td style="padding: 1rem;"><span style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Platinum</span></td>
-                <td style="padding: 1rem;">3 - Édition</td>
+                <td style="padding: 1rem;"><strong>HÃ©ritage Dupont</strong></td>
+                <td style="padding: 1rem;"><span style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Platinium</span></td>
+                <td style="padding: 1rem;">3 - Ã‰dition</td>
                 <td style="padding: 1rem;">
                   <div style="background: #e2e8f0; height: 8px; border-radius: 10px; overflow: hidden;">
                     <div style="background: linear-gradient(90deg, #3b82f6, #8b5cf6); height: 100%; width: 60%; border-radius: 10px;"></div>
@@ -588,7 +588,7 @@
               <tr style="border-bottom: 1px solid #e2e8f0;">
                 <td style="padding: 1rem;"><strong>Patrimoine Africain</strong></td>
                 <td style="padding: 1rem;"><span style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Or</span></td>
-                <td style="padding: 1rem;">2 - Rédaction</td>
+                <td style="padding: 1rem;">2 - RÃ©daction</td>
                 <td style="padding: 1rem;">
                   <div style="background: #e2e8f0; height: 8px; border-radius: 10px; overflow: hidden;">
                     <div style="background: linear-gradient(90deg, #f59e0b, #d97706); height: 100%; width: 45%; border-radius: 10px;"></div>
@@ -598,16 +598,16 @@
                 <td style="padding: 1rem;"><span style="background: #fef3c7; color: #92400e; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">En cours</span></td>
               </tr>
               <tr>
-                <td style="padding: 1rem;"><strong>Consécration Famille Z</strong></td>
-                <td style="padding: 1rem;"><span style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Platinum</span></td>
-                <td style="padding: 1rem;">5 - Dédicace</td>
+                <td style="padding: 1rem;"><strong>ConsÃ©cration Famille Z</strong></td>
+                <td style="padding: 1rem;"><span style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Platinium</span></td>
+                <td style="padding: 1rem;">4 - Transmission & ConsÃ©cration</td>
                 <td style="padding: 1rem;">
                   <div style="background: #e2e8f0; height: 8px; border-radius: 10px; overflow: hidden;">
                     <div style="background: linear-gradient(90deg, #10b981, #059669); height: 100%; width: 100%; border-radius: 10px;"></div>
                   </div>
                   <small style="color: #64748b;">100%</small>
                 </td>
-                <td style="padding: 1rem;"><span style="background: #d1fae5; color: #065f46; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Complété</span></td>
+                <td style="padding: 1rem;"><span style="background: #d1fae5; color: #065f46; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">ComplÃ©tÃ©</span></td>
               </tr>
             </tbody>
           </table>
@@ -622,7 +622,7 @@
       <!-- Page Header -->
       <div style="margin-bottom: 2rem;">
         <h1 style="font-size: 2rem; font-weight: 800; color: #1e293b; margin-bottom: 0.5rem;">
-          💼 Tableau de Bord 1 Jeune 1 Emploi
+          💼Tableau de Bord 1 Jeune 1 Emploi
         </h1>
         <p style="color: #64748b; font-size: 1.1rem;">
           Programme AGIR - Accompagnement Global à l'Insertion Rapide
@@ -652,7 +652,7 @@
           <div class="stat-header">
             <div>
               <div class="stat-value">92%</div>
-              <div class="stat-label">Taux de Réussite</div>
+              <div class="stat-label">Taux de RÃ©ussite</div>
             </div>
             <div class="stat-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
               <i class="typcn typcn-thumbs-up"></i>

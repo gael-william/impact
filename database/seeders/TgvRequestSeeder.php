@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\TgvRequest;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class TgvRequestSeeder extends Seeder
@@ -13,46 +12,45 @@ class TgvRequestSeeder extends Seeder
      */
     public function run(): void
     {
-        // Créer quelques demandes TGV de test
         $sampleRequests = [
             [
-                'service_type' => 'Corpus',
+                'service_type' => 'Argent',
                 'name' => 'Traore',
                 'prenom' => 'Kofi',
                 'telephone' => '2270253456',
                 'email' => 'kofi.traore@example.com',
-                'commentaire' => 'Très intéressé par la collecte et l\'archivage de nos archives familiales.',
+                'commentaire' => 'Je veux transmettre l\'essentiel de mon parcours de vie.',
                 'status' => 'pending',
             ],
             [
-                'service_type' => 'Avancé',
+                'service_type' => 'Or',
                 'name' => 'Kone',
                 'prenom' => 'Marie',
                 'telephone' => '2270189234',
                 'email' => 'marie.kone@example.com',
-                'commentaire' => 'Nous voulons publier l\'histoire de notre Grand-mère avec ISBN international.',
+                'commentaire' => 'Nous voulons une version approfondie avec plus de details familiaux.',
                 'status' => 'pending',
             ],
             [
-                'service_type' => 'VIP',
+                'service_type' => 'Diamant',
                 'name' => 'Diallo',
                 'prenom' => 'Ibrahim',
                 'telephone' => '22671298765',
                 'email' => 'ibrahim.diallo@business.com',
-                'commentaire' => 'Projet de grande envergure. Nous avons besoin de la prise en charge complète.',
+                'commentaire' => 'Projet patrimonial ambitieux pour les prochaines generations.',
                 'status' => 'pending',
             ],
             [
-                'service_type' => 'Essentiel',
+                'service_type' => 'Platinium',
                 'name' => 'Kouame',
                 'prenom' => 'Youssouf',
                 'telephone' => '2270456123',
                 'email' => 'youssouf.kouame@email.com',
-                'commentaire' => 'Intéressé par le manuscrit professionnel et les leçons de vie.',
+                'commentaire' => 'Je recherche l\'excellence academique pour un heritage de prestige.',
                 'status' => 'accepted',
                 'reviewed_at' => now()->subDays(3),
                 'reviewed_by' => 'Admin System',
-                'admin_notes' => 'Demande approuvée. Contact établi.',
+                'admin_notes' => 'Demande approuvee. Contact etabli.',
             ],
             [
                 'service_type' => 'Or',
@@ -60,11 +58,11 @@ class TgvRequestSeeder extends Seeder
                 'prenom' => 'Fatou',
                 'telephone' => '2270987654',
                 'email' => 'fatou.ndiaye@outlook.com',
-                'commentaire' => 'Catégorie Or semble idéale pour notre projet de famille.',
+                'commentaire' => 'Le niveau Or semble adapte a notre projet de famille.',
                 'status' => 'rejected',
                 'reviewed_at' => now()->subDays(1),
                 'reviewed_by' => 'Admin System',
-                'admin_notes' => 'Capacité limitée actuellement. Rapport proposé pour réévaluation en mars.',
+                'admin_notes' => 'Capacite limitee actuellement. Reevaluation proposee en mars.',
             ],
         ];
 

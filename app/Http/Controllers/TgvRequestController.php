@@ -9,74 +9,44 @@ use Illuminate\Validation\Rule;
 class TgvRequestController extends Controller
 {
     /**
-     * Affiche le formulaire de demande TGV avec le type pré-rempli
+     * Affiche le formulaire de demande TGV avec le type pre-rempli
      */
     public function showForm($serviceType)
     {
-        // Valider le type de service
-        $validTypes = ['Corpus', 'Essentiel', 'Avancé', 'Consacré', 'VIP', 'Diamant', 'Or', 'Argent'];
-        
+        $validTypes = ['Argent', 'Or', 'Diamant', 'Platinium'];
+
         if (!in_array($serviceType, $validTypes)) {
             return redirect('/')->with('error', 'Type de service invalide');
         }
 
         $serviceMetadata = [
-            'Corpus' => [
-                'nom' => 'Corpus TGV',
-                'description' => 'Collecte et archives',
-                'prix' => '3 000 000',
-                'couleur' => '#2563eb',
-                'icone' => '📋',
-            ],
-            'Essentiel' => [
-                'nom' => 'TGV Essentiel',
-                'description' => 'Manuscrit & leçons',
-                'prix' => '7 000 000',
-                'couleur' => '#16a34a',
-                'icone' => '✍️',
-            ],
-            'Avancé' => [
-                'nom' => 'TGV Avancé',
-                'description' => 'Édition professionnelle',
-                'prix' => '17 000 000',
-                'couleur' => '#d97706',
-                'icone' => '📚',
-                'tag' => 'POPULAIRE',
-            ],
-            'Consacré' => [
-                'nom' => 'TGV Consacré',
-                'description' => 'Dédicace officielle',
-                'prix' => '25 000 000',
-                'couleur' => '#a855f7',
-                'icone' => '🎉',
-            ],
-            'VIP' => [
-                'nom' => 'TGV VIP',
-                'description' => 'Prise en charge totale',
-                'prix' => '50 000 000',
-                'couleur' => '#facc15',
-                'icone' => '👑',
-            ],
-            'Diamant' => [
-                'nom' => 'Catégorie DIAMANT',
-                'description' => 'L\'accompagnement Premium pour votre patrimoine',
-                'prix' => 'Sur devis',
-                'couleur' => '#0891b2',
-                'icone' => '💎',
+            'Argent' => [
+                'nom' => 'TGV Argent',
+                'description' => 'Niveau structure essentiel',
+                'prix' => '1 000 000',
+                'couleur' => '#64748b',
+                'icone' => '🥈',
             ],
             'Or' => [
-                'nom' => 'Catégorie OR',
-                'description' => 'L\'accompagnement équilibré et complet',
-                'prix' => 'Sur devis',
-                'couleur' => '#d97706',
-                'icone' => '✨',
+                'nom' => 'TGV Or',
+                'description' => 'Niveau approfondi',
+                'prix' => '1 500 000',
+                'couleur' => '#d4a017',
+                'icone' => '🥇',
             ],
-            'Argent' => [
-                'nom' => 'Catégorie ARGENT',
-                'description' => 'L\'accompagnement essentiel et accessible',
-                'prix' => 'Sur devis',
-                'couleur' => '#475569',
-                'icone' => '🌟',
+            'Diamant' => [
+                'nom' => 'TGV Diamant',
+                'description' => 'Niveau patrimonial premium',
+                'prix' => '3 000 000',
+                'couleur' => '#06b6d4',
+                'icone' => '💎',
+            ],
+            'Platinium' => [
+                'nom' => 'TGV Platinium',
+                'description' => 'Excellence academique & prestige',
+                'prix' => '6 000 000',
+                'couleur' => '#0b1f4f',
+                'icone' => '👑',
             ],
         ];
 
@@ -87,12 +57,12 @@ class TgvRequestController extends Controller
     }
 
     /**
-     * Stocke la demande TGV dans la base de données
+     * Stocke la demande TGV dans la base de donnees
      */
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'service_type' => ['required', Rule::in(['Corpus', 'Essentiel', 'Avancé', 'Consacré', 'VIP', 'Diamant', 'Or', 'Argent'])],
+            'service_type' => ['required', Rule::in(['Argent', 'Or', 'Diamant', 'Platinium'])],
             'name' => 'required|string|max:100',
             'prenom' => 'required|string|max:100',
             'telephone' => 'required|regex:/^\d{7,15}$/|numeric',
@@ -101,11 +71,11 @@ class TgvRequestController extends Controller
         ], [
             'service_type.required' => 'Le type de service est requis.',
             'name.required' => 'Le nom est requis.',
-            'prenom.required' => 'Le prénom est requis.',
-            'telephone.required' => 'Le numéro de téléphone est requis.',
-            'telephone.regex' => 'Le numéro de téléphone doit contenir 7 à 15 chiffres.',
+            'prenom.required' => 'Le prenom est requis.',
+            'telephone.required' => 'Le numero de telephone est requis.',
+            'telephone.regex' => 'Le numero de telephone doit contenir 7 a 15 chiffres.',
             'email.required' => 'L\'email est requis.',
-            'email.email' => 'L\'email doit être valide.',
+            'email.email' => 'L\'email doit etre valide.',
         ]);
 
         try {
@@ -137,7 +107,7 @@ class TgvRequestController extends Controller
     }
 
     /**
-     * Affiche les détails d'une demande spécifique
+     * Affiche les details d'une demande specifique
      */
     public function show(TgvRequest $request)
     {
@@ -160,7 +130,7 @@ class TgvRequestController extends Controller
             'reviewed_by' => auth()->user()->name ?? 'Admin',
         ]);
 
-        return redirect()->back()->with('success', 'Demande acceptée avec succès.');
+        return redirect()->back()->with('success', 'Demande acceptee avec succes.');
     }
 
     /**
@@ -179,7 +149,7 @@ class TgvRequestController extends Controller
             'reviewed_by' => auth()->user()->name ?? 'Admin',
         ]);
 
-        return redirect()->back()->with('success', 'Demande refusée.');
+        return redirect()->back()->with('success', 'Demande refusee.');
     }
 
     /**
@@ -193,7 +163,7 @@ class TgvRequestController extends Controller
             'reviewed_by' => auth()->user()->name ?? 'Admin',
         ]);
 
-        return redirect()->back()->with('success', 'Demande archivée.');
+        return redirect()->back()->with('success', 'Demande archivee.');
     }
 
     /**
@@ -202,7 +172,7 @@ class TgvRequestController extends Controller
     public function destroy(TgvRequest $tgvRequest)
     {
         $tgvRequest->delete();
-        return redirect()->back()->with('success', 'Demande supprimée.');
+        return redirect()->back()->with('success', 'Demande supprimee.');
     }
 
     /**
@@ -223,4 +193,3 @@ class TgvRequestController extends Controller
         ]);
     }
 }
-

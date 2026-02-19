@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TgvRequestController;
@@ -15,7 +15,7 @@ Route::get('/admin', [DashboardController::class, 'index'])->name('admin.dashboa
 Route::prefix('tgv')->name('tgv.')->group(function () {
     Route::get('/{serviceType}/form', [TgvRequestController::class, 'showForm'])
         ->name('form')
-        ->where('serviceType', 'Corpus|Essentiel|Avancé|Consacré|VIP|Diamant|Or|Argent');
+        ->where('serviceType', 'Argent|Or|Diamant|Platinium');
     
     Route::post('/submit', [TgvRequestController::class, 'store'])
         ->name('store');
@@ -44,3 +44,4 @@ Route::prefix('admin/tgv')->name('admin.tgv.')->group(function () {
     Route::delete('/requests/{tgvRequest}', [TgvRequestController::class, 'destroy'])
         ->name('destroy');
 });
+
