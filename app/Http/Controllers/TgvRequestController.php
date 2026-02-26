@@ -30,14 +30,14 @@ class TgvRequestController extends Controller
             'Or' => [
                 'nom' => 'TGV Or',
                 'description' => 'Niveau approfondi',
-                'prix' => '1 500 000',
+                'prix' => '2 000 000',
                 'couleur' => '#d4a017',
                 'icone' => '🥇',
             ],
             'Diamant' => [
                 'nom' => 'TGV Diamant',
                 'description' => 'Niveau patrimonial premium',
-                'prix' => '3 000 000',
+                'prix' => '4 000 000',
                 'couleur' => '#06b6d4',
                 'icone' => '💎',
             ],

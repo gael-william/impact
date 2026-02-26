@@ -165,8 +165,8 @@
             grâce au Trajet Global de Vie (TGV).
           </p>
           <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center">
-            <a href="#tarification" class="btn btn-light btn-lg fw-bold px-4">Commencer mon TGV</a>
             <a href="#fonctionnement" class="btn btn-outline-light btn-lg fw-bold px-4">Découvrir comment ça fonctionne</a>
+            <a href="#tarification" class="btn btn-light btn-lg fw-bold px-4">Commencer mon TGV</a>
           </div>
         </div>
       </div>
@@ -391,7 +391,7 @@
         <div class="col-sm-6 col-xl-3">
           <div class="price-card h-100">
             <p class="tag tag-gold">Or</p>
-            <h3 class="h4 fw-bold mt-3">1 500 000 FCFA</h3>
+            <h3 class="h4 fw-bold mt-3">2 000 000 FCFA</h3>
             <p class="text-secondary mb-4">Approfondissement et richesse narrative.</p>
             <a href="{{ route('tgv.form', 'Or') }}" class="btn w-100" style="background:var(--gold);color:#1f2937;">Commencer</a>
           </div>
@@ -399,7 +399,7 @@
         <div class="col-sm-6 col-xl-3">
           <div class="price-card h-100">
             <p class="tag tag-diamond">Diamant</p>
-            <h3 class="h4 fw-bold mt-3">3 000 000 FCFA</h3>
+            <h3 class="h4 fw-bold mt-3">4 000 000 FCFA</h3>
             <p class="text-secondary mb-4">Transmission ambitieuse et profondeur analytique.</p>
             <a href="{{ route('tgv.form', 'Diamant') }}" class="btn w-100" style="background:var(--diamond);color:#083344;">Commencer</a>
           </div>
@@ -435,7 +435,7 @@
       <p class="mb-4 text-light">Ne laissez pas vos leçons de vie se perdre.</p>
       <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center">
         <a href="#tarification" class="btn btn-light fw-bold px-4">Démarrer mon TGV</a>
-        <a href="tel:+22670256363" class="btn btn-outline-light fw-bold px-4">Prendre rendez-vous</a>
+        <a href="https://calendly.com/app/scheduling/meeting_types/user/me" class="btn btn-outline-light fw-bold px-4">Prendre rendez-vous</a>
       </div>
     </div>
   </section>
